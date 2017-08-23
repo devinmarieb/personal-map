@@ -30,6 +30,15 @@
         height: 50px;
         margin: 0 30px;
       }
+      .current {
+        color: #FF1D8E;
+      }
+      .past {
+        color: #9BC53D;
+      }
+      .traveled {
+        color: #5BC0EB;
+      }
     </style>
     <title>Europe</title>
   </head>
@@ -43,13 +52,14 @@
       const map = new Datamap({
         element: document.getElementById('container'),
         fills: {
+          current: '#FF1D8E',
           lived: '#9BC53D',
           visited: '#5BC0EB',
           defaultFill: '#2E2E2E'
         },
         data: {
           //north america
-          USA: {fillKey: 'lived'},
+          USA: {fillKey: 'current'},
           CAN: {fillKey: 'visited'},
           //europe
           CHE: {fillKey: 'visited'},
@@ -82,7 +92,8 @@
       <a href="mailto:devinmarieb@gmail.com"><img class="social" src="./images/email.png" /></a>
     </section>
     <p class="about">
-      Hi boys. I'm Tina. Butts. My hearttttttttt. Chad the Zombie touched the butt of that girl with the frosted hair from my art class. I think her name is Kristi. If I were a hamburger you'd come and watch! I had no idea there was so much butt touching in baseball. I thought I saw a baby bump. I'm just not sure if I'll be any good on the grill with one free hand. He did? That's the sleaziest, sneakiest, most romantic thing anyone's ever done to me. Everyone touched each other's butts, and it was great. It includes material that may not be suitable for all ages. Thank you zombie boyfriends. I've been using the toilet like an idiot. My crotch is itchy. Your body.
+      On the map above, you can find <span class="current">where I currently live, </span><span class="past">where I've previously lived, </span>
+      <span class="traveled">and countries I've traveled to.</span> Click on a country to link to a blog post about my adventures there.
     </p>
   </body>
 </html>
