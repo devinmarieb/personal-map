@@ -5,31 +5,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Sorts+Mill+Goudy" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <style media="screen">
-    body {
-      background-color: #F2F2F2;
-      color: #2E2E2E;
-    }
-    .title {
-      margin: 30px 0;
-      text-align: center;
-      font-size: 38px;
-      font-family: 'Lobster Two', cursive;
-    }
-    .about {
-      padding: 10px 80px;
-      text-align: justify;
-      font-size: 18px;
-      font-family: 'Sorts Mill Goudy', serif;
-    }
-    .social-container {
-      margin: 15px 0;
-      text-align: center;
-    }
-    .social {
-      width: 50px;
-      height: 50px;
-      margin: 0 30px;
-    }
+      body {
+        background-color: #F2F2F2;
+        color: #2E2E2E;
+      }
+      .title {
+        margin: 30px 0;
+        text-align: center;
+        font-size: 38px;
+        font-family: 'Lobster Two', cursive;
+      }
+      .about {
+        padding: 10px 80px;
+        text-align: justify;
+        font-size: 18px;
+        font-family: 'Sorts Mill Goudy', serif;
+      }
+      .social-container {
+        margin: 15px 0;
+        text-align: center;
+      }
+      .social {
+        width: 50px;
+        height: 50px;
+        margin: 0 30px;
+      }
     </style>
     <title>Europe</title>
   </head>
@@ -38,9 +38,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="bower_components/datamaps/dist/datamaps.world.min.js"></script>
-    <div id="container" style="margin: -170px auto; width: 970px; height: 750px;"></div>
+    <div id="container" style="position: relative; margin: -145px auto; width: 1100px; height: 700px;"></div>
     <script>
-      var map = new Datamap({
+      const map = new Datamap({
         element: document.getElementById('container'),
         fills: {
           lived: '#9BC53D',
@@ -62,17 +62,16 @@
           AUS: {fillKey: 'lived'},
           NZL: {fillKey: 'visited'},
           FJI: {fillKey: 'visited'}
-
         }
       });
     </script>
     <h1 class="title">devin beliveau { front end engineer }</h1>
-    <div class="social-container">
+    <section class="social-container">
       <a href="https://medium.com/@devinmarieb" target="blank"><img class="social" src="./images/medium.ico" /></a>
       <a href="https://github.com/devinmarieb" target="blank"><img class="social" src="./images/github.png" /></a>
       <a href="https://www.linkedin.com/in/devin-beliveau-2126448" target="blank"><img class="social" src="./images/linkedin.png" /></a>
       <a href="mailto:devinmarieb@gmail.com"><img class="social" src="./images/email.png" /></a>
-    </div>
+    </section>
     <p class="about">
       Hi boys. I'm Tina. Butts. My hearttttttttt. Chad the Zombie touched the butt of that girl with the frosted hair from my art class. I think her name is Kristi. If I were a hamburger you'd come and watch! I had no idea there was so much butt touching in baseball. I thought I saw a baby bump. I'm just not sure if I'll be any good on the grill with one free hand. He did? That's the sleaziest, sneakiest, most romantic thing anyone's ever done to me. Everyone touched each other's butts, and it was great. It includes material that may not be suitable for all ages. Thank you zombie boyfriends. I've been using the toilet like an idiot. My crotch is itchy. Your body.
     </p>
