@@ -16,10 +16,13 @@
         font-family: 'Lobster Two', cursive;
       }
       .about {
+        width: 70%;
+        margin: 0 auto;
         padding: 10px 80px;
         text-align: justify;
         font-size: 18px;
         font-family: 'Sorts Mill Goudy', serif;
+        z-index: 4;
       }
       .social-container {
         margin: 0 0 15px 0;
@@ -66,13 +69,14 @@
         },
         data: {
           //north america
-          USA: {fillKey: 'current'},
+          USA: {fillKey: 'lived'},
           CAN: {fillKey: 'visited'},
           //europe
           CHE: {fillKey: 'visited'},
           IRL: {fillKey: 'visited'},
           ITA: {fillKey: 'visited'},
           ISL: {fillKey: 'visited'},
+          NLD: {fillKey: 'current'},
           //asia
           JPN: {fillKey: 'visited'},
           //oceania
@@ -118,7 +122,7 @@
         }
       });
     </script>
-    <h1 class="title">devin beliveau { front end engineer }</h1>
+    <h1 class="title">devin beliveau { front end developer }</h1>
     <section class="social-container">
       <a href="https://medium.com/@devinmarieb" target="blank"><img class="social" src="./images/medium.ico" /></a>
       <a href="https://github.com/devinmarieb" target="blank"><img class="social" src="./images/github.png" /></a>
@@ -126,6 +130,7 @@
       <a href="mailto:devinmarieb@gmail.com"><img class="social" src="./images/email.png" /></a>
     </section>
     <p class="about">
+      Hi, I'm Devin. I code and I travel. I'm an expat and IPA enthusiast. I also enojoy a good knitting pattern.
       On the map above, you can find <span class="current">where I currently live, </span><span class="past">where I've previously lived, </span>
       <span class="traveled">and countries I've traveled to.</span> Click on a country to link to a blog post about my adventures there.
       To read my latest coding blog, click <a href="https://medium.com/@devinmarieb/trials-and-tribulations-with-d3-d1bb5ab7fb44" target="blank" class="code-blog">here</a>.
