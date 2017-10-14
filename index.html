@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Sorts+Mill+Goudy" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Sorts+Mill+Goudy" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <style media="screen">
       body {
@@ -13,14 +14,14 @@
         margin: 0 0 15px 0;
         text-align: center;
         font-size: 38px;
-        font-family: 'Lobster Two', cursive;
+        font-family: 'Bubbler One', sans-serif;
       }
       .about {
         width: 70%;
         margin: 0 auto;
         padding: 10px 80px;
         text-align: justify;
-        font-size: 18px;
+        font-size: 20px;
         font-family: 'Sorts Mill Goudy', serif;
         z-index: 4;
       }
@@ -49,6 +50,13 @@
       .code-blog:hover {
         color: #E066FF;
       }
+      .wrapper{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background: #F2F2F2;
+        opacity: 0.9;
+      }
     </style>
     <title>Europe</title>
   </head>
@@ -57,7 +65,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="bower_components/datamaps/dist/datamaps.world.min.js"></script>
-    <div id="container" style="position: relative; margin: -20px auto; width: 1100px; height: 500px;"></div>
+    <div id="container" style="position: relative; margin: -20px auto; width: 900px; height: 500px;"></div>
     <script>
       const map = new Datamap({
         element: document.getElementById('container'),
@@ -77,6 +85,7 @@
           ITA: {fillKey: 'visited'},
           ISL: {fillKey: 'visited'},
           NLD: {fillKey: 'current'},
+          HUN: {fillKey: 'visited'},
           //asia
           JPN: {fillKey: 'visited'},
           //oceania
@@ -125,18 +134,20 @@
         }
       });
     </script>
-    <h1 class="title">devin beliveau { front end developer }</h1>
-    <section class="social-container">
-      <a href="https://medium.com/@devinmarieb" target="blank"><img class="social" src="./images/medium.ico" /></a>
-      <a href="https://github.com/devinmarieb" target="blank"><img class="social" src="./images/github.png" /></a>
-      <a href="https://www.linkedin.com/in/devin-beliveau-2126448" target="blank"><img class="social" src="./images/linkedin.png" /></a>
-      <a href="mailto:devinmarieb@gmail.com"><img class="social" src="./images/email.png" /></a>
-    </section>
-    <p class="about">
-      Hi, I'm Devin. I code and I travel. I like IPAs, knitting and dogs.
-      On the map above, you can find <span class="current">where I currently live, </span><span class="past">where I've previously lived, </span>
-      <span class="traveled">and countries I've traveled to.</span> Click on a country to link to a blog post about my adventures there.
-      To read my latest coding blog, click <a href="https://medium.com/@devinmarieb/trials-and-tribulations-with-d3-d1bb5ab7fb44" target="blank" class="code-blog">here</a>.
-    </p>
+    <div class="wrapper">
+      <h1 class="title">devin beliveau { front end developer }</h1>
+      <section class="social-container">
+        <a href="https://medium.com/@devinmarieb" target="blank"><img class="social" src="./images/medium.ico" /></a>
+        <a href="https://github.com/devinmarieb" target="blank"><img class="social" src="./images/github.png" /></a>
+        <a href="https://www.linkedin.com/in/devin-beliveau-2126448" target="blank"><img class="social" src="./images/linkedin.png" /></a>
+        <a href="mailto:devinmarieb@gmail.com"><img class="social" src="./images/email.png" /></a>
+      </section>
+      <p class="about">
+        Hi, I'm Devin. I code and I travel.
+        On the map above, you can find <span class="current">where I live, </span><span class="past">where I've lived, </span>
+        <span class="traveled">and places I've traveled.</span> Click on a country to link to a blog post about my adventures there.
+        To read my latest coding blog, click <a href="https://medium.com/@devinmarieb/trials-and-tribulations-with-d3-d1bb5ab7fb44" target="blank" class="code-blog">here</a>.
+      </p>
+    </div>
   </body>
 </html>
